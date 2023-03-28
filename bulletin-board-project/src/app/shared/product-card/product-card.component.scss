@@ -1,10 +1,15 @@
 .product-card{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 25px 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
+
+  img {
+    width: 500px;
+  }
 }

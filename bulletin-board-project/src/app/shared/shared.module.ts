@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { AppRoutingModule } from '../interface/app-routing.module';
 
 
 
@@ -10,6 +11,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
   ],
   imports: [
     CommonModule,
+    AppRoutingModule,
   ],
   exports: [
     ProductCardComponent,
