@@ -12,7 +12,7 @@ export class ProductsService {
 
   getList():Observable<IProductResponse>{
     return this._http.get<IProductResponse>(
-      'https://fakerapi.it/api/v1/custom?_quantity=16&customfield1=pokemon&customfield2=dateTime&customfield3=phone&customfield4=city&customfield5=streetAddress&customfield6=image&customfield7=number'
+      'https://fakerapi.it/api/v1/custom?_locale=ru_RU&_quantity=16&customfield1=name&customfield2=dateTime&customfield3=phone&customfield4=city&customfield5=streetAddress&customfield6=image&customfield7=number'
     )
   }
 

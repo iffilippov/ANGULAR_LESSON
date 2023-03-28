@@ -10,7 +10,7 @@ import { IProduct } from './interface/product';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'bulletin-board-project';
+  title = 'Доска объявлений';
   products: IProduct[] = []
   constructor(private _productService: ProductsService) {}
   ngOnInit(): void {
