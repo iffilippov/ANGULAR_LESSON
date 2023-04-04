@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { products as data } from './data/product';
-import { ProductsService } from './data/products.service';
-import { IProduct } from './interface/product';
 
 
 @Component({
@@ -9,11 +6,6 @@ import { IProduct } from './interface/product';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'Доска объявлений';
-  products: IProduct[] = []
-  constructor(private _productService: ProductsService) {}
-  ngOnInit(): void {
-    this._productService.getList().subscribe(response => {this.products = response.data})
-  }
+export class AppComponent {
+  title = 'Доска объявлений';  
 }

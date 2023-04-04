@@ -1,6 +1,9 @@
-<a routerLink="/">{{ title }}</a>
-<button pButton pRipple label="Submit" class="p-button-success"></button>
-
-<div>
+<div class="header">
+  <app-header class="container-main"></app-header>
+</div>
+<div class="categories-search">
+  <app-categories-search class="container-main"></app-categories-search>
+</div>
+<div class="container-main">
   <router-outlet></router-outlet>
 </div>

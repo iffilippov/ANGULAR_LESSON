@@ -1,0 +1,27 @@
+<ng-container *ngIf="ad; else skeleton">
+  <div class="card" routerLink="/view/{{ ad.id }}">
+    <div class="image__container">
+      <img class="image" [src]="ad.imgSrc" />
+    </div>
+    <div class="description">
+      <div class="description__title link">{{ ad.title }}</div>
+      <div class="description__price">{{ ad.price | currencyFormat }}</div>
+      <div class="secondary">{{ ad.address }}</div>
+      <div class="secondary">{{ ad.createdAt }}</div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #skeleton>
+  <div>
+    <div class="image__container">
+      <p-skeleton width="100%" height="240px"></p-skeleton>
+    </div>
+    <div class="description">
+      <p-skeleton class="description__skeleton" width="80%" height="22px"></p-skeleton>
+      <p-skeleton class="description__skeleton" width="60%" height="22px"></p-skeleton>
+      <p-skeleton class="description__skeleton" width="60%" height="16px"></p-skeleton>
+      <p-skeleton class="description__skeleton" width="40%" height="16px"></p-skeleton>
+    </div>
+  </div>
+</ng-template>
