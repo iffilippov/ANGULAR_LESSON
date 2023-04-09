@@ -7,14 +7,28 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   styleUrls: ['./recommendations.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RecommendationsComponent {
+export class RecommendationsComponent implements OnInit {
+
+  mockData: any[] = [];
+
+  ngOnInit() {
+    this.mockData = new Array(16).fill({
+      id: 0,
+      title: 'Кот Уголёк',
+      price: 20000,
+      // imgSrc: 'https://placehold.co/600x400',
+      imgSrc: 'https://iili.io/HkNtQDb.jpg',
+      createdAt: 'Сегодня 14:12',
+      address: 'Москва',
+    });
+  }
 
 //   public readonly state$ = new BehaviorSubject<IPageState<any>>( __value: {
 //     isLoading: true,
 //     data: [],
 //   })
 
-//   public skeletonArr: [] = new Array(arrayLength: 20);
+//   public skeletonArr: [] = new Array(arrayLength: 16);
 
 //   public ngOnInit(): {
 //     setTimeout(handler: (): => {

@@ -1,4 +1,11 @@
-<div class="page-title">Рекомендации для вас</div>
+<p class="advertisments__header">
+  Рекомендации для вас
+</p>
+<div class="advertisments">
+  <div *ngFor="let ad of mockData" class="xl:col-3 lg:col-4 md:col-6 sm:col-12 advertisments__card">
+    <app-advertisment-card [ad]="ad"></app-advertisment-card>
+  </div>  
+</div>
 
 <!-- <div class="grid grid_cards" *ngIf="state$ | async as state">
   <ng-container *ngIf="!state.isLoading; else loading">
@@ -20,3 +27,14 @@
   </ng-container>
 </ng-template>
 <ng-template #noData></ng-template> -->
+
+<!-- <a href="#" class="advertisments__card">
+    <img src="E:/Dev/Solarvito/bulletin-board-project/src/assets/images/girls.png" alt="advertisment image" class="advertisments__card-image">
+    <p class="advertisments__card-header">
+      Жена и её лучшая подруга
+    </p>
+    <span class="advertisments__card-price">
+      20 000 ₽
+    </span>
+    <p class="advertisments__card-location-date">Москва, Ленинский проспект <br> Сегодня 14:12 </p>
+  </a> -->  

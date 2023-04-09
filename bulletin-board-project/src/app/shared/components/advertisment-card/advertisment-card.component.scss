@@ -1,0 +1,48 @@
+@import "E:/Dev/Solarvito/bulletin-board-project/src/assets/styles/variables.scss";
+
+.ad-card {
+  margin: 0 auto;
+  @extend %flex-column;
+  align-items: flex-start;
+  margin-bottom: 32px;  
+  height: 336px;
+  border: 1px solid $inverse-text-color;	   
+
+		&__image {
+      // width: 100%;
+      width: 306px;
+      height: 240px;
+      margin-bottom: 8px;
+		}
+
+		&__header {
+      width: 100%;  
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: $primary-color;
+		}
+
+		&__price {
+      width: 100%;
+      height: 24px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: $text-color;
+		}
+
+		&__location-date {
+      width: 100%;  
+      height: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $secondary-text-color;
+		}
+}
+.ad-card:hover {
+  border: 1px solid $primary-color;
+  box-shadow: 0 0 0 1px $primary-color;
+  transition: all .3s ease;
+}

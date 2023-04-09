@@ -18,5 +18,11 @@ import { RecommendationsComponent } from './pages/recommendations/recommendation
     CommonModule,
     AdvertismentCardComponentModule,
   ],
+  exports: [
+    AdvertismentComponent,
+    RecommendationsComponent,
+    SearchResultsComponent,
+    AdvertismentCardComponentModule,
+  ]
 })
 export class OpenAccessModule { }
