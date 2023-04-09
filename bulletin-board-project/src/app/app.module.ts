@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponentModule } from './shared/components/header/header.component';
+import { CategoriesSearchComponentModule } from './shared/components/categories-search/categories-search.component';
 import { CurrencyFormatPipeModule } from './shared/pipes/currency-format.pipe';
 import { FileSizePipeModule } from './shared/pipes/file-size.pipe';
 import { LoginModalComponentModule } from './shared/modals/login-modal/login-modal.component';
@@ -13,7 +14,6 @@ import { PhoneModalComponentModule } from './shared/modals/phone-modal/phone-mod
 import { AppComponent } from './app.component';
 import { AdvertismentComponent } from './modules/open-access/pages/advertisment/advertisment.component';
 // import { RecommendationsComponent } from './pages/recommendations/recommendations.component';
-import { CategoriesSearchComponent } from './shared/components/categories-search/categories-search.component';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
 import { ValidationComponent } from './shared/components/validation/validation.component';
 
@@ -22,7 +22,6 @@ import { ValidationComponent } from './shared/components/validation/validation.c
   declarations: [
     AppComponent,
     AdvertismentComponent,
-    CategoriesSearchComponent,
     GalleryComponent,
     ValidationComponent,
   ],
@@ -32,6 +31,7 @@ import { ValidationComponent } from './shared/components/validation/validation.c
     AppRoutingModule,
     BrowserAnimationsModule,
     HeaderComponentModule,
+    CategoriesSearchComponentModule,
     CurrencyFormatPipeModule,
     FileSizePipeModule,
     LoginModalComponentModule,

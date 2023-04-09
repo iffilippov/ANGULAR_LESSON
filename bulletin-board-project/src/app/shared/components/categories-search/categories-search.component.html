@@ -1,1 +1,22 @@
-<p>Доска объявлений</p>
+<ng-container class="categories-search">
+  <a href="" class="categories-search__header">Доска объявлений</a>
+
+  <!-- <p-menu #menu [popup]="true" [model]="menuItems"></p-menu> -->
+
+  <button pButton class="categories-search__all-categories p-button-outlined">
+    <i class="pi pi-bars"></i>
+    <p class="categories-search__all-categories_text">
+      Все категории
+    </p>
+  </button>
+  <form action="" class="categories-search__search-form">
+    <input type="" class="categories-search__search-form_input" placeholder="Поиск по объявлениям"
+      aria-label="Поиск">
+    <button pButton class="categories-search__search-button">
+      <p class="categories-search__search-button_text">
+        Найти
+      </p>
+      <i class="pi pi-search"></i>
+    </button>
+  </form>
+</ng-container>

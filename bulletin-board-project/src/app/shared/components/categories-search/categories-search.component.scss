@@ -1,0 +1,106 @@
+@import "E:/Dev/Solarvito/bulletin-board-project/src/assets/styles/variables.scss";
+
+.categories-search {
+  &__header {
+    @extend %flex-row-center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    width: 284px;
+    height: 36px;
+    color: $text-color;
+    margin-right: 24px;
+  }
+
+  &__all-categories {
+    @extend %flex-row-center;
+    justify-content: center;
+    padding: 7px 12px;
+    margin-right: 12px;
+    width: 152px;
+    height: 36px;  
+    // color: $primary-color;
+    // border: 1px solid $primary-color;
+    border-radius: 4px;
+
+    &_text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 0;
+      text-decoration: none;
+    }
+  }
+
+  // &__all-categories:hover {
+  //   background: $primary-color;
+  //   color: $inverse-text-color;
+  //   transition: all .3s ease;
+  // }
+
+  &__search-form {
+    box-sizing: border-box;
+    @extend %flex-row-center;
+    width: 824px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+
+    &_input {
+      @extend %flex-column;
+      align-items: flex-start;
+      padding-left: 8px;
+      margin: 0px -1px;
+      width: 734px;
+      height: 36px;
+      border: 1px solid $forms-border-color;
+      border-radius: 4px 0px 0px 4px;
+      outline: none;
+    }
+
+    &_input:hover {
+      // border: 0.1px solid $surface-border-color;
+      transition: all .3s ease;
+    }
+
+    &_input:focus {
+      // border: 0.1px solid $primary-color;
+      box-shadow: 0 0 0 1px $primary-color;
+      transition: all .3s ease;
+    }
+
+    &_input:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  &__search-button {
+    @extend %flex-row-center;
+    justify-content: center;
+    padding: 8px 12px;
+    width: 91px;
+    height: 36px;
+    background: $primary-color;
+    border: 1px solid $forms-border-color;
+    border-radius: 0px 4px 4px 0px;
+    color:$inverse-text-color;
+    text-decoration: none;
+
+    &_text {
+      font-weight: 500;
+      font-size: 14px;  
+    }
+  }
+
+  &__search-button:hover {
+    // background: $hover-background-color;
+    // color: $primary-color;
+    transition: all .3s ease;
+  }
+}
+.pi-bars {
+  margin-right: 8.63px;
+}
+.pi-search {
+  font-size: 14px;
+  margin-left: 8px;
+}
