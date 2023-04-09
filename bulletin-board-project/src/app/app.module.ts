@@ -13,8 +13,6 @@ import { PhoneModalComponentModule } from './shared/modals/phone-modal/phone-mod
 import { OpenAccessModule } from './modules/open-access/open-access.module';
 
 import { AppComponent } from './app.component';
-// import { AdvertismentComponent } from './modules/open-access/pages/advertisment/advertisment.component';
-// import { RecommendationsComponent } from './pages/recommendations/recommendations.component';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
 import { ValidationComponent } from './shared/components/validation/validation.component';
 

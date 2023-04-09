@@ -7,7 +7,6 @@ import { AdvertismentComponent } from './pages/advertisment/advertisment.compone
 import { RecommendationsComponent } from './pages/recommendations/recommendations.component';
 
 
-
 @NgModule({
   declarations: [
     SearchResultsComponent,

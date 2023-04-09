@@ -1,8 +1,6 @@
 <div class="header-block">
   <ng-container>
-
     <p-menu #menu [popup]="true" [model]="menuItems" class="menu"></p-menu>
-
     <button pButton class="p-button-text header-block__log-in-btn" (click)="menu.toggle($event)">
       <i class="pi pi-user"></i>
       <span class="p-button-text header-block__log-in-btn_text">
@@ -26,7 +24,7 @@
   <button pButton class="p-button-text user-btn" (click)="menu.toggle($event)">
     <i class="pi pi-user"></i>
     <span>
-      Иван
+      User
       <i class="pi pi-chevron-down"></i>
     </span>
   </button>

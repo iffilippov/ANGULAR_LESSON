@@ -15,14 +15,12 @@ export class RecommendationsComponent implements OnInit {
     this.mockData = new Array(16).fill({
       id: 0,
       title: 'Кот Уголёк',
-      price: 20000,
-      // imgSrc: 'https://placehold.co/600x400',
+      price: 20000,      
       imgSrc: 'https://iili.io/HkNtQDb.jpg',
       createdAt: 'Сегодня 14:12',
       address: 'Москва',
     });
   }
-
 //   public readonly state$ = new BehaviorSubject<IPageState<any>>( __value: {
 //     isLoading: true,
 //     data: [],
@@ -46,5 +44,4 @@ export class RecommendationsComponent implements OnInit {
 //     }, timeoutimport { __values } from 'tslib';
 // : 1000);
 //   }
-
 }
