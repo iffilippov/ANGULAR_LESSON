@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { AdvertismentCardComponentModule } from 'src/app/shared/components/advertisment-card/advertisment-card.component';
+// import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-recommendations',

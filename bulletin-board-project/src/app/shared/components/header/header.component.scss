@@ -1,0 +1,70 @@
+@import "E:/Dev/Solarvito/bulletin-board-project/src/assets/styles/variables.scss";
+
+.header-block {
+  @extend %flex-row-center;
+  justify-content: flex-end;  
+  height: 100%;
+
+  &__log-in-btn {
+    @extend %flex-row-center;
+    height: 32px;
+    margin-right: 24px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0;
+    color: $inverse-text-color;
+    border-radius: 4px;
+    border-width: 0px;
+    text-decoration: none; 
+  }
+  &__log-in-btn_text {
+    width: 70px;
+    height: 20px;
+  }
+
+  &__new-ad-btn {
+    @extend %flex-row-center;
+    justify-content: center;
+    padding: 6px 12px;
+    width: 179px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0;
+    color: $inverse-text-color;
+    background: $primary-color;
+    border-radius: 4px;
+    border-width: 0px;
+    text-decoration: none;
+  }
+}
+::ng-deep .p-menu {
+  height: 108px;
+  width: 150px;
+  padding: 0px;
+  .p-menu-list {
+    .p-menuitem {
+      height: 36px;
+      .p-menuitem-text {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }  
+}
+.pi-user {
+  font-size: 15px;
+  padding: 2.5px;
+  margin-left: 3px;
+  // margin-right: 3.04px;
+}
+.pi-chevron-down {
+  font-size: 8px;
+  margin-left: 4px;
+  margin-top: 8.25px;
+}
+.pi-plus {
+  font-size: 10px;
+  margin-left: 9px;
+}

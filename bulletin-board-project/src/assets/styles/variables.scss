@@ -1,0 +1,16 @@
+$primary-color: #3B82F6;
+$text-color: #1E293B;
+$secondary-text-color: #64748B;
+$inverse-text-color: #FFFFFF;
+$hover-background-color: #F1F5F9;
+$forms-border-color: #CBD5E1;
+$surface-border-color: #E2E8F0;
+%flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}

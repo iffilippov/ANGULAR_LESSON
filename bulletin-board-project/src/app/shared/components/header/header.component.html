@@ -1,4 +1,23 @@
-<p>header works!</p>
+<div class="header-block">
+  <ng-container>
+
+    <p-menu #menu [popup]="true" [model]="menuItems" class="menu"></p-menu>
+
+    <button pButton class="p-button-text header-block__log-in-btn" (click)="menu.toggle($event)">
+      <i class="pi pi-user"></i>
+      <span class="p-button-text header-block__log-in-btn_text">
+        Войти
+        <i class="pi pi-chevron-down"></i>
+      </span>
+    </button>
+
+    <button pButton class="header-block__new-ad-btn" routerLink="/new-ad">
+      Новое объявление
+      <i class="pi pi-plus"></i>
+    </button>
+  </ng-container>
+</div>
+
 
 <!-- <ng-container *ngIf="authService.isAuthenticated$ | async; else notAuthenticated">
 
@@ -22,5 +41,10 @@
   <button pButton class="p-button-text user-btn" (click)="showLoginDialog()">
     <i class="pi pi-user"></i>
     Войти
+  </button>
+
+  <button pButton class="new-ad-btn" (click)="showLoginDialog()">
+    Новое объявление
+    <i class="pi pi-plus"></i>
   </button>
 </ng-template> -->

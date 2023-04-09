@@ -16,14 +16,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class HeaderComponent {
   public readonly menuItems: MenuItem[] = [
     {
       label: 'Мои объявления',
       command: () => this.router.navigateByUrl('/my-ads'),
     },
-    { label: 'Настройки'},
-    // { label: 'Выйти', command: () => this.authService.logout() },
+    {
+      label: 'Настройки',
+      command: () => this.router.navigateByUrl('/settings'),
+    },
+    {
+      label: 'Выйти',
+      command: () => this.router.navigateByUrl(''),
+      // command: () => this.authService.logout()
+    },
   ];
 
   constructor(
